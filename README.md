@@ -47,6 +47,7 @@ python run.py
 ```
 
 Open your web browser at:
+- **Live URL**:https://quantview-ai-wexy.onrender.com
 - **Web Platform**: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 - **Interactive OpenAPI Documentation**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
