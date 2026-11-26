@@ -1,5 +1,6 @@
 # QuantView AI — Intelligent Stock Analytics Platform
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/iamkhirod/QuantView-AI)
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.14-blue?logo=python)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111%2B-009688?logo=fastapi)](https://fastapi.tiangolo.com)
 [![Machine Learning](https://img.shields.io/badge/Machine%20Learning-XGBoost%20%2B%20SHAP-orange)](https://xgboost.readthedocs.io)
@@ -10,6 +11,21 @@
 **QuantView AI** is a modern, enterprise-grade quantitative stock research and machine learning platform engineered for equities across **Indian Markets (NSE/BSE in ₹ INR)** and **US Markets (NASDAQ/NYSE in $ USD)**.
 
 It pairs rigorous statistical modeling—purged walk-forward cross-validation, explainable AI (SHAP), market regime classification, and institutional hysteresis benchmarking—with a modern, responsive financial technology SaaS interface.
+
+---
+
+## 🚀 1-Click Cloud Deployment (Free 24/7 Hosting)
+
+Deploy QuantView AI directly to the cloud for free with **Render**:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/iamkhirod/QuantView-AI)
+
+1. Click the **Deploy to Render** button above.
+2. Sign in with your GitHub account (`iamkhirod`).
+3. Click **Apply** / **Create Web Service**.
+4. Render will automatically build the environment, install dependencies, and provide a public HTTPS URL (e.g., `https://quantview-ai.onrender.com`) accessible from any browser globally.
+
+---
 
 ---
 
