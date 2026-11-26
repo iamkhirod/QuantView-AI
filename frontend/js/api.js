@@ -6,7 +6,8 @@ const Api = (function () {
   'use strict';
 
   async function request(endpoint, options = {}) {
-    const url = endpoint.startsWith("http") ? endpoint : endpoint;
+    const base = (window.CONFIG && window.CONFIG.API_BASE) || "";
+    const url = endpoint.startsWith("http") ? endpoint : `${base}${endpoint}`;
     const headers = options.headers || {};
 
     if (!headers["Content-Type"] && !(options.body instanceof FormData)) {

@@ -25,7 +25,7 @@ log = logging.getLogger(__name__)
 # Secret key for HMAC token signing (configurable via environment variable)
 AUTH_SECRET_KEY = os.environ.get(
     "QUANTVIEW_SECRET_KEY", 
-    "quantview-ai-production-super-secret-key-salt-9876543210"
+    os.environ.get("SECRET_KEY", "quantview-ai-production-super-secret-key-salt-9876543210")
 ).encode("utf-8")
 
 # Token lifetime (7 days)

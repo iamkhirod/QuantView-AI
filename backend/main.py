@@ -103,10 +103,12 @@ app = FastAPI(
 # Configurable CORS: read from environment, default to * for dev
 _cors_origins_env = os.environ.get("CORS_ORIGINS", "*")
 _allowed_origins = [o.strip() for o in _cors_origins_env.split(",") if o.strip()]
+_allow_credentials = False if _cors_origins_env == "*" or not _allowed_origins or _allowed_origins == ["*"] else True
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_allowed_origins if _allowed_origins else ["*"],
+    allow_credentials=_allow_credentials,
     allow_methods=["*"],
     allow_headers=["*"],
 )

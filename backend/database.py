@@ -14,10 +14,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-# Database location: backend/data/quantview.db
-DB_DIR = Path(__file__).parent / "data"
-DB_DIR.mkdir(parents=True, exist_ok=True)
-DB_PATH = DB_DIR / "quantview.db"
+# Database location: default to backend/data/quantview.db or environment variable
+db_env = os.environ.get("DATABASE_PATH")
+if db_env:
+    DB_PATH = Path(db_env)
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+else:
+    DB_DIR = Path(__file__).parent / "data"
+    DB_DIR.mkdir(parents=True, exist_ok=True)
+    DB_PATH = DB_DIR / "quantview.db"
 
 
 def get_db_connection() -> sqlite3.Connection:
